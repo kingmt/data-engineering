@@ -24,3 +24,7 @@ https://www.google.com/accounts/o8/id
 ## Miscelaneous Design Descisions
 
 I deliberately left the database as SQLite to minimize the amount of work needed to setup the app. There are too many variables between MySql or Postgres and between Ubuntu and OS X to keep things simple.
+
+The views and import controller were left untested mostly due to their simplicity, even though it is a 'broken window'.
+
+The OpenID linkage is grudingly untested. While I am familiar with SAML setup I am familiar with OpenID only in passing. I would consider this code to be more of a code spike since this is the first time I have actually used OpenID. If I were to be working on something that was intended to be more permanent a greater understanding of OpenID, the libraries and more tests would be in order. It would take me another few hours to acquire the necessary understanding to build real mocked tests and this exercise wasn't intended to take more than the few hours I had already spent.
